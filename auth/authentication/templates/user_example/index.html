@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Index </title>
+    </head>
+    <body align ="center">
+
+<br><br>
+        <h2> Basic User Authentication  </h2>
+
+        {% if user.is_authenticated %}
+        <h2> Your Name is : {{user.username}} </h2>
+        {% else %}
+        <h6> Sorry, You are not log in properly yet, please carefully login</h6>
+        {% endif %}
+
+
+        </body>
+        </html>
+        
